@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .block{color:red}
+        .inline{color:white}
+.block{
+    /* box-sizing: border-box; 쓰면
+    원래 있던 정사각형의 넓이가 나옴
+    헷갈릴때 사용 */
+    background-color: lightblue;
+    border:1px solid blue;
+    width: 100px;
+    height: 100px;
+    /* margin은 도형 외부 벌리기 */
+    margin: 20px;
+    /* padding 은 도형 내부 벌리기 */
+    padding: 20px;
+    /* border-radius 는 둥글게? */
+    border-radius: 10px;
+    
+}
+
+    .inline{
+        background-color: yellowgreen;
+        margin-top: 100px;
+        /* a 나 span 은 margin width 다 적용 안됨! */
+        border-radius: 10px;
+        padding: 10px 50px;
+        /* 상하로 10px, 좌우로 50px */
+        
+    }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- block 레벨 요소 -->
+    <div class="block">Box</div>
+    <div class="block">Box</div>
+ 
+
+    <!-- inline 요소 -->
+    <a class="inline" href="">a 태그</a>
+    <span class="inline">span 태그</span>
+</body>
+</html>
